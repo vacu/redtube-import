@@ -15,7 +15,6 @@ with open('export_online_mthumb_.csv', newline='', encoding='utf-8') as csvfile:
     videoReader = csv.reader(csvfile, delimiter='|', quoting=csv.QUOTE_NONE)
 
     for row in videoReader:
-        print(row[0])
         # 0 = video id
         # 1 = thumb
         # 2 = url

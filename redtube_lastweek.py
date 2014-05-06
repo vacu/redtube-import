@@ -11,7 +11,7 @@ categoriesC = db.categories
 videosC     = db.videos
 
 # read csv file
-with open('ebf630468fa27f75dae8cc89039ad88322fd5596.csv', newline='', encoding='utf-8') as csvfile:
+with open('a1eb5c9051960d57a32174f41a0f22171c579871.csv', newline='', encoding='utf-8') as csvfile:
     videoReader = csv.reader(csvfile, delimiter='|', quoting=csv.QUOTE_NONE)
 
     for row in videoReader:
@@ -55,7 +55,6 @@ with open('ebf630468fa27f75dae8cc89039ad88322fd5596.csv', newline='', encoding='
                     keywords += ',' + newTag.lower()
 
             videoElem['keywords'] = keywords
-
             videosC.save(videoElem)
 
 print('Done')
